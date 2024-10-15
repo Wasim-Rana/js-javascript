@@ -62,11 +62,29 @@ const user1 = [
 
 user1[1].id
 
-console.log(user);
+// console.log(user);
 
-console.log(Object.keys(user)); // return all the keys present in the object 
-console.log(Object.values(user)); // return all the values present in the object 
-console.log(Object.entries(user)); // return all the entries present in the object [ [ 'id', '121' ], [ 'city', 'Abad' ], [ 'age', '21' ] ]
+// console.log(Object.keys(user)); // return all the keys present in the object 
+// console.log(Object.values(user)); // return all the values present in the object 
+// console.log(Object.entries(user)); // return all the entries present in the object [ [ 'id', '121' ], [ 'city', 'Abad' ], [ 'age', '21' ] ]
 
 // the entries return array within an array , it convert all key value pair to an array 
 
+
+const course = {
+    name: "javascript",
+    price : 300,
+    instructor : "chai aur code"
+}
+const {instructor : inst} = course; // destructure any object 
+
+console.log(inst);
+
+
+// intro to api 
+
+// {
+//  //json
+//  "name" : "wasim", // keys and value both are identify as a string 
+//  "email" : "abc@gmail.com",    
+// }
