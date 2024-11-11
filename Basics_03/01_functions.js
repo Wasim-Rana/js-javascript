@@ -24,4 +24,49 @@ function userLoggedIn(username){
     }
     return `${username} just logged in `
 }
-console.log(userLoggedIn("wasim "));
+// console.log(userLoggedIn("wasim "));
+
+// rest operator 
+
+
+function addArguements(...number1){
+        return number1
+}
+
+// console.log(addArguements(2));
+
+// console.log(addArguements(12,23,45,556));
+
+//(...) rest operator converts argument into array it store multiple argument 
+
+//add object to function
+
+const obj1 ={
+    username : "wasim",
+    age: 20
+}
+
+function returnObject (anyobject){
+    console.log(`username is ${anyobject.username} and age is ${anyobject.age}`);
+}
+
+// returnObject(obj1)
+
+returnObject({
+    username: "rana",
+    age:19
+})
+//we can also give arguments while we calling of the function
+
+//anyobject can get reference of anyiobject present in to js 
+
+
+//array in the fucntion 
+
+const arr1 = [12,122,323,"wasim"]
+
+function myArray (getArray){
+    return getArray[2]
+}
+// console.log(myArray(arr1))
+console.log(myArray([1,11,2,3,]));
