@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // if 
 //  if (true){
 
@@ -64,3 +65,6 @@ if ( loggedInGoogle || LogEmail){
 }else {
     console.log("logged out ");
 }
+=======
+// if  
+>>>>>>> 1f087e3eebbc8e4a394dff9ee8f3f21fa68688e6
