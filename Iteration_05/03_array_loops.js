@@ -41,6 +41,6 @@ const myObj = {
     'alias': 'spider man'
 }
 
-for (const [element,value] of myObj) {
-    // console.log(element , " " , value);
-}
+// for (const [element,value] of myObj) {
+//     console.log(element , " " , value);
+// }
