@@ -14,8 +14,8 @@ const regirsterUser= {
     email: "E@gmail.com",
     fullname : {
         username : {
-            firstname : "rana",
-            lastname : "wasim"
+            firstname : "bond",
+            lastname : "james"
         }
     }
 
@@ -85,6 +85,6 @@ console.log(inst);
 
 // {
 //  //json
-//  "name" : "wasim", // keys and value both are identify as a string 
+//  "name" : "alias", // keys and value both are identify as a string 
 //  "email" : "abc@gmail.com",    
 // }

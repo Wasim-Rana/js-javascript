@@ -10,6 +10,6 @@
 
 ( (name) => {
     console.log(`this is an example of unnamed iife ${name}`);
-} ) ('wasim')
+} ) ('peter parker')
 
 

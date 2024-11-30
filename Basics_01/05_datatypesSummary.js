@@ -43,10 +43,10 @@ let mufunction = function(){
 // Object  =>  object
 
 
-let myName= "wasim"
+let myName= "Frank"
 let myName2= myName
 
- myName2="rana"
+ myName2="Frankenstien"
 
 console.log(myName);
 console.log(myName2);
@@ -54,12 +54,12 @@ console.log(myName2);
 
 
 let user ={
-    email:"wasimrana@gmail.com",
-    city: "ahmedabad"
+    email:"abc@gmail.com",
+    city: "New Jersey"
 }
 
 let user2=user 
 
-user2.city="mumbai"
+user2.city="Sydney"
 console.log(user.city);
 console.log(user2.city);

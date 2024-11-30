@@ -16,11 +16,11 @@ const mySym = Symbol("hello this is symbol")
 const user = {
     //keys : values; 
 
-    name : "wasim" , 
-    "lastname" : "rana" ,
+    name : "toothless" , 
+    "lastname" : "dragon" ,
     [mySym] : mySym ,
     age : 12 ,
-    loc : "gujrat" ,
+    loc : "dragon island" ,
     hobbies : ["reading" , "coding" , Array.of("hello", " hi")]
 }
 

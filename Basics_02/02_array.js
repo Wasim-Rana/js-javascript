@@ -36,16 +36,16 @@ const arrNew = [1,2,4,[5,4,21,23],[3,43,4],5,[9,6,5,1]]
 //  ]
 
 
-console.log(Array.isArray("Wasim"));    //false
+console.log(Array.isArray("Shrek"));    //false
 
-console.log(Array.from("Wasim"));   //[ 'W', 'a', 's', 'i', 'm' ]
+console.log(Array.from("Shrek"));   //[ 'W', 'a', 's', 'i', 'm' ]
 
-console.log(Array.from({name:"wasim"})); // it gives empty space [] , it cannot convert keys into array
+console.log(Array.from({name:"Shrek"})); // it gives empty space [] , it cannot convert keys into array
 
 
 let var1=200
-let var2="wasim"
+let var2="Toothless"
 let var3=true
 
-console.log(Array.of(var1,var2,var3,"hello"));  //[ 200, 'wasim', true, 'hello' ]
+console.log(Array.of(var1,var2,var3,"hello"));  //[ 200, 'Shrek', true, 'hello' ]
 

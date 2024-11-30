@@ -24,7 +24,7 @@ function userLoggedIn(username){
     }
     return `${username} just logged in `
 }
-// console.log(userLoggedIn("wasim "));
+// console.log(userLoggedIn(" tom "));
 
 // rest operator 
 
@@ -42,7 +42,7 @@ function addArguements(...number1){
 //add object to function
 
 const obj1 ={
-    username : "wasim",
+    username : "tom",
     age: 20
 }
 
@@ -53,7 +53,7 @@ function returnObject (anyobject){
 // returnObject(obj1)
 
 returnObject({
-    username: "rana",
+    username: "hardy",
     age:19
 })
 //we can also give arguments while we calling of the function
@@ -63,7 +63,7 @@ returnObject({
 
 //array in the fucntion 
 
-const arr1 = [12,122,323,"wasim"]
+const arr1 = [12,122,323,"tom"]
 
 function myArray (getArray){
     return getArray[2]

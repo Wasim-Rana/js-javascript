@@ -27,9 +27,9 @@ if (true){
 // nested fucntion 
 
 function one (){
-    const username = "wasim"
+    const username = "tom"
     function two (){
-            const fname = "rana"
+            const fname = "hanks"
             // console.log(username); // can be accessed because it is defined parent class block 
     }
 
@@ -40,9 +40,9 @@ function one (){
 one()
 
 if(true){
-    const username = "wasim"
-    if(username === "wasim"){
-        const surname = " rana"
+    const username = "tom"
+    if(username === "tom"){
+        const surname = " hanks"
         // console.log(username + surname);
     }
 }
