@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove element from DOM</title>
+
+    <style>
+        /* your styles go here */
+
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <ul class="language">
+     <li>JAVA Script</li>
+    </ul>
+</body>
+    <script>
+            function addLanguage (name){
+                   const LI =document.createElement('li')
+                   LI.innerHTML = `${name}`
+                   document.querySelector('.language').appendChild(LI)
+            }
+            addLanguage("Python")
+            addLanguage("JAVA")
+
+            function addOptimizedLang (Langname){
+                const LI = document.createElement('li')
+                LI.appendChild(document.createTextNode(Langname))
+                document.querySelector('.language').appendChild(LI)
+            }
+            addOptimizedLang("TypeScript")
+
+            // Edit Remove 
+            const  SecLang = document.querySelector("li:nth-child(2)")
+            // SecLang.innerHTML= "MoJo"
+            console.log(SecLang);
+            const New_Li = document.createElement('li')
+            New_Li.textContent="MoJo"
+            SecLang.replaceWith(New_Li) // replace the second value wtih the new value 
+
+            const firstlang = document.querySelector("li:nth-child(1)")
+            firstlang.outerHTML= '<li>Django</li>'
+
+
+            // remove the elmenet from Dom 
+
+            const rmv = document.querySelector('li:last-child')
+            rmv.remove()
+    </script>
+</html>
