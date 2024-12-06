@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: rgb(185, 225, 212);">
+    <h2>Images</h2>
+
+    <div>
+        <ul id="images">
+                <li>
+                    <img width="200px" id="photoshop" src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="photoshop">
+                </li>
+                <li>
+                    <img width="200px" id="colors" src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="">
+                </li>
+                <li>
+                    <img width="200px" id="jungle" src="https://i0.wp.com/picjumbo.com/wp-content/uploads/amazing-stone-path-in-forest-free-image.jpg?w=600&quality=80" alt="">
+                </li>
+                <li>
+                    <img width="200px" id="cat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-C_UAhXq9GfuGO452EEzfbKnh1viQB9EDBQ&s">
+                </li>
+                <li>
+                    <img width="200px" id="monkey" src="https://images.panda.org/assets/images/pages/welcome/orangutan_1600x1000_279157.jpg">
+                </li>
+                <li>
+                    <a href="https://google.com" id="google" style="text-decoration: none; color: black; font-size: larger;">Google</a>
+                </li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('cat').onclick= function (){
+    //     alert("cat image clicked")
+    // } // this approach provide less feature 
+    // attachEvent()
+    // jQuery - on 
+    
+    // things we are learning
+    //type , timestamp , default prevented 
+    //target , toElement , srcElement
+    // client X , client Y , screen X , screen Y 
+    // altkey , ctrlkey ,shiftkey , keycode
+
+    // document.getElementById('images').addEventListener('click', (e) => {
+    //         console.log("clicked inside the list ");
+    // },false) // third parameter (event prapogation) is used for some of the application who does not run without boolean values, false works as default
+    //     // false is event bubbling (default)  flow from buttom to top 
+    //     // true is event capturing 
+
+    //     document.getElementById('cat').addEventListener('click', (e) => {
+    //         console.log(" cat image was clicked");
+    //         e.stopPropagation() // stop bubbling of the event 
+    // },false)
+
+
+    // document.getElementById('google').addEventListener('click' , (e) => {
+    //     e.preventDefault()
+    //     // console.log("google clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',(e) => {
+            console.log(e.target.tagName);
+            if(e.target.tagName === 'IMG'){
+                console.log(e.target.id);
+            let rmv = e.target.parentNode
+            rmv.remove()
+            }
+            
+            // rmv.parentNode.removeChild[rmv]
+    },false)
+    
+</script>
+</html>
