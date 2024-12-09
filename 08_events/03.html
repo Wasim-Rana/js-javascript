@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Another Async fucntion</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const intervel = (str) => {
+        console.log("Interval after 1 sec ", str , Date.now());
+    }
+    let stopInterval ;
+    
+   document.querySelector('#start').addEventListener('click', () => {
+    stopInterval = setInterval(intervel,1000,"hello")
+    console.log("intervel starts");
+   })
+
+   document.querySelector('#stop').addEventListener('click',() => {
+    clearInterval(stopInterval)
+    console.log("interval stopped");
+   })
+
+</script>
+</html> 
