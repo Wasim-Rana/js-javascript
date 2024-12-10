@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+
+    <!-- Value	State	             Description
+    0	    UNSENT	             Client has been created. open() not called yet.
+    1	    OPENED	             open() has been called.
+    2	    HEADERS_RECEIVED	 send() has been called, and headers and status are available.
+    3	    LOADING	             Downloading;responseText holds partial data.
+    4	    DONE	             The operation is complete. -->
+
+    <button id="getData">CLick</button>
+    
+</body>
+
+<script> 
+    const ReqUrl = 'https://api.github.com/users/Wasim-Rana'
+    const Xml = new XMLHttpRequest()
+    Xml.open('GET',ReqUrl) // open method does not track or monitor continuously 
+    Xml.onreadystatechange = () => {
+        console.log(Xml.readyState);
+        if(Xml.readyState === 4){
+        let data = JSON.parse(this.responseText);
+        console.log(typeof data);
+        console.log(data.followers);
+        }
+
+    }
+    // console.log(Xml.readyState);
+    Xml.send()
+
+
+    // let RequestURL = "https://api.github.com/users/Wasim-Rana";
+    // const getData = document.getElementById("getData");
+    // getData.addEventListener("click", (e) => {
+    // ;
+    //   const Xml = new XMLHttpRequest();
+    //   Xml.open("GET", RequestURL);
+    //   // console.log(Xml.readyState);
+    //   Xml.onreadystatechange = () => {
+    //     if (Xml.readyState === 4) {
+    //       let data = JSON.parse(this.responseText);
+    //       let img_url = data.avatar_url;
+    //       let followers = data.followers;
+    //       const div = document.createElement("div");
+    //       div.innerHTML = `<img src=${image_url} style="height=70% width=100%" /><p>Followers: ${followers}</p>`;
+    //       document.body.appendChild(div);
+    //     }
+    //   };
+    //   Xml.send();
+    // });
+</script>
+</html>
