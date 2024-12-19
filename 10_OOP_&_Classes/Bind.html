@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React
+    </title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    class react{
+        constructor(){
+            this.username="React"
+            this.server = "http://localost:300"
+
+            //requirement 
+            document.querySelector('button').addEventListener( 'click', this.handelclick.bind(this))
+        }
+        handelclick(){
+            console.log("Button Clicked");
+            console.log(this.username);
+            console.log(this.server);
+            console.log(this);
+        }
+    } 
+    
+    const App = new react()
+    
+
+</script>
+</html>
