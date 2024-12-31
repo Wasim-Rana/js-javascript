@@ -31,5 +31,13 @@ Welcome to my JavaScript Learning Repository! This repository is dedicated to do
     -  truthy.js
 - 05_Iteration
     
-  
+
+## Author
+
+- [@Wasim Rana](https://www.github.com/Wasim-Rana)
+
+
+## Acknowledgements
+
+ - A big thank you to **[HiteshChaudhary](https://github.com/hiteshchoudhary/)** for creating the amazing learning experince. Your effort and dedication to teaching JavaScript have been instrumental in my learning journey. Thank you for sharing your knowledge with the community!
     
