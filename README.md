@@ -30,6 +30,52 @@ Welcome to my JavaScript Learning Repository! This repository is dedicated to do
     -  switch.js
     -  truthy.js
 - 05_Iteration
+    - 01_iteration.js
+    - 02_loops.js
+    - 03_array_loops.js
+    - 04_object_loops.js
+    - 05_forEach.js
+    - 06_filter.js
+    - 07_map.js
+    - 08_reduce.js
+- 06_DOM
+    - 01_Dom.html
+    - 02_Dom.html
+    - 03_nodelist.html
+    - 04_Dom.html
+- 07_projects
+    - 01_colorchange
+    - 02_BMIcalculator
+    - 04_DigitalClock
+    - 05_keyword
+    - 06_unlimitedColors
+    - Index.html
+    - index.css
+- 08_events
+    - 01_events.html
+    - 02.html
+    - 03.html
+- 09_Advance_modules
+    - 01_Api_Request.html
+    - 02_promises.js
+    - fetch.jpg
+- 10_OOP_&Classes
+    - Bind.js
+    - Opp.js
+    - Prototype.js
+    - call.js
+    - getter_setter.js
+    - inheritance.js
+    - math_pi.js
+    - myCLasses.js
+    - notes.md
+    - obj_get_set.js
+    - object.js
+    - pro_get_set.js
+
+- 11_Informative
+    - closure.html
+---
     
 
 ## Author
